@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+// #include <unistd.h>
 
 void	ft_putstr(char *str)
 {
@@ -20,7 +20,7 @@ void	ft_putstr(char *str)
 	ft_putstr(str + sizeof(char));
 }
 
-int	main(void)
-{
-	ft_putstr("Hello, world!");
-}
+// int	main(void)
+// {
+// 	ft_putstr("Hello, world!");
+// }
