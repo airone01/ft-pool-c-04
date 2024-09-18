@@ -57,7 +57,7 @@ void	ft_putnbr_base(int nbr, char *base)
 		return ;
 	if (nbr < 0)
 	{
-		write(1, '-', 1);
+		write(1, "-", 1);
 		ft_putnbr_base(-nbr, base);
 		return ;
 	}
@@ -65,18 +65,18 @@ void	ft_putnbr_base(int nbr, char *base)
 	{
 		ft_putnbr_base(nbr / base_len, base);
 	}
-	write(1, base[nbr % base_len], 1);
+	write(1, &(base[nbr % base_len]), 1);
 }
 
 // int	main(void)
 // {
 // 	write(1, "### Tests des radixes\n", 23);
 // 	ft_putnbr_base(-69420, "01");
-// 	write(1, '\n', 1);
+// 	write(1, "\n", 1);
 // 	ft_putnbr_base(-69420, "poneyvif");
-// 	write(1, '\n', 1);
+// 	write(1, "\n", 1);
 // 	ft_putnbr_base(-69420, "0123456789");
-// 	write(1, '\n', 1);
+// 	write(1, "\n", 1);
 // 	ft_putnbr_base(-69420, "0123456789abcdef");
 // 	write (1, "\n### Tests des edge-cases\n", 26);
 // 	ft_putnbr_base(-69420, "");
