@@ -20,8 +20,8 @@ void	ft_putstr(char *str)
 	ft_putstr(str + sizeof(char));
 }
 
-int	main(int argc, char **argv)
-{
-	(void) argc;
-	ft_putstr(argv[1]);
-}
+// int	main(int argc, char **argv)
+// {
+// 	(void) argc;
+// 	ft_putstr(argv[1]);
+// }
