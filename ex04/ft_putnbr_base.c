@@ -10,8 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
 #include <unistd.h>
+// For tests
+// #include <stdlib.h>
 
 int	ft_strlen(char *str)
 {
@@ -20,8 +21,6 @@ int	ft_strlen(char *str)
 	return (ft_strlen(str + sizeof(char)) + 1);
 }
 
-// Checks the base for bad chars and compares it
-// to its old self for duplicates.
 int	bad_base(char *base)
 {
 	int	i;
@@ -68,21 +67,8 @@ void	ft_putnbr_base(int nbr, char *base)
 	write(1, &(base[nbr % base_len]), 1);
 }
 
-// int	main(void)
+// int	main(int argc, char **argv)
 // {
-// 	write(1, "### Tests des radixes\n", 23);
-// 	ft_putnbr_base(-69420, "01");
-// 	write(1, "\n", 1);
-// 	ft_putnbr_base(-69420, "poneyvif");
-// 	write(1, "\n", 1);
-// 	ft_putnbr_base(-69420, "0123456789");
-// 	write(1, "\n", 1);
-// 	ft_putnbr_base(-69420, "0123456789abcdef");
-// 	write (1, "\n### Tests des edge-cases\n", 26);
-// 	ft_putnbr_base(-69420, "");
-// 	ft_putnbr_base(-69420, "a");
-// 	ft_putnbr_base(-69420, "012345678+");
-// 	ft_putnbr_base(-69420, "012345678-");
-// 	ft_putnbr_base(-69420, "0012345678");
-// 	ft_putnbr_base(-69420, "0123456780");
+// 	(void) argc;
+// 	ft_putnbr_base(atoi(argv[1]), argv[2]);
 // }
