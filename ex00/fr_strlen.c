@@ -19,9 +19,8 @@ int	ft_strlen(char *str)
 	return (ft_strlen(str + sizeof(char)) + 1);
 }
 
-// int	main(void)
+// int	main(int argc, char **argv)
 // {
-// 	printf("'hello'         : %d\n", ft_strlen("hello"));
-// 	printf("'Hello, world'  : %d\n", ft_strlen("Hello, world!"));
-// 	printf("'Hello\\0, world': %d\n", ft_strlen("Hello\0, world!"));
+// 	(void) argc;
+// 	printf("%d", ft_strlen(argv[1]));
 // }

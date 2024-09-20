@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-// #include <limits.h>
+// #include <stdlib.h>
 
 void	ft_putchar(char c)
 {
@@ -40,14 +40,8 @@ void	ft_putnbr(int nb)
 	ft_putchar(nb + '0');
 }
 
-// int	main(void)
+// int	main(int argc, char **argv)
 // {
-// 	ft_putnbr(42);
-// 	ft_putchar('\n');
-// 	ft_putnbr(-42);
-// 	ft_putchar('\n');
-// 	ft_putnbr(-2147483648);
-// 	ft_putchar('\n');
-// 	ft_putnbr(2147483647);
-// 	ft_putchar('\n');
+// 	(void) argc;
+// 	ft_putnbr(atoi(argv[1]));
 // }
